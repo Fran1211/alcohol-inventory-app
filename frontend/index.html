@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Alcohol Inventory</title>
+</head>
+<body>
+  <h1>Alcohol Inventory</h1>
+
+  <button onclick="loadInventory()">Load Inventory</button>
+
+  <h3>Add Item</h3>
+  <form id="addForm">
+    <input id="id" placeholder="ID (e.g. A001)" required>
+    <input id="name" placeholder="Name" required>
+    <input id="type" placeholder="Type (e.g. Whiskey)">
+    <input id="price" placeholder="Price" type="number" step="0.01">
+    <input id="volume" placeholder="Volume (ml)" type="number">
+    <input id="quantity" placeholder="Quantity" type="number">
+    <button type="submit">Add</button>
+  </form>
+
+  <h3>Inventory List</h3>
+  <ul id="inventoryList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
